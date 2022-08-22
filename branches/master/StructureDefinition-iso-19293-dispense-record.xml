@@ -1,0 +1,1249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="iso-19293-dispense-record"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record" title="A record of dispensing of a medicinal product">iso-19293-dispense-record</a><a name="iso-19293-dispense-record"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.identifier" title="A business identifier of the Dispense">identifier</a><a name="iso-19293-dispense-record.identifier"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Dispense identifier<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.date-time" title="Date/time of the dispense">date-time</a><a name="iso-19293-dispense-record.date-time"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date/time of the dispense<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.prescription" title="Prescription information if available">prescription</a><a name="iso-19293-dispense-record.prescription"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-group.html" title="BackboneElement">group</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Prescription information if available<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.prescription.prescription-link-or-id" title="Link or unique ID of the prescription">prescription-link-or-id</a><a name="iso-19293-dispense-record.prescription.prescription-link-or-id"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Link or unique ID of the prescription<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.prescription.prescription-content" title="Relevant content of the prescription, repeated in the dispense">prescription-content</a><a name="iso-19293-dispense-record.prescription.prescription-content"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-group.html" title="BackboneElement">group</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Content of the prescription<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.prescription.prescription-content.prescriber-id" title="ID of the prescriber">prescriber-id</a><a name="iso-19293-dispense-record.prescription.prescription-content.prescriber-id"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ID of the prescriber<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.prescription.prescription-content.patient-id" title="ID of the patient">patient-id</a><a name="iso-19293-dispense-record.prescription.prescription-content.patient-id"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ID of the patient<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1001.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.prescription.prescription-content.prescribed-item" title="Item prescribed">prescribed_item</a><a name="iso-19293-dispense-record.prescription.prescription-content.prescribed_item"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-group.html" title="BackboneElement">group</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Item prescribed<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.prescription.prescription-content.prescribed-item.identifier" title="product identifier">identifier</a><a name="iso-19293-dispense-record.prescription.prescription-content.prescribed_item.identifier"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">product identifier<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.prescription.prescription-content.prescribed-item.posology" title="Posology for the item">posology</a><a name="iso-19293-dispense-record.prescription.prescription-content.prescribed_item.posology"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Posology for the item<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.prescription.prescription-content.prescribed-item.treatment-date-duration" title="Treatment date or duration">treatment-date-duration</a><a name="iso-19293-dispense-record.prescription.prescription-content.prescribed_item.treatment-date-duration"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Treatment date or duration<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.prescription.prescription-content.prescribed-item.repetitions-refills-allowed" title="Repetitions or refills allowed">repetitions-refills-allowed</a><a name="iso-19293-dispense-record.prescription.prescription-content.prescribed_item.repetitions-refills-allowed"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Repetitions or refills allowed<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.patient" title="Patient information">patient</a><a name="iso-19293-dispense-record.patient"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-group.html" title="BackboneElement">group</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Patient information<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.patient.identifier" title="Patient identifier">identifier</a><a name="iso-19293-dispense-record.patient.identifier"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Patient identifier<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.patient.birthdate" title="Patient birthdate">birthdate</a><a name="iso-19293-dispense-record.patient.birthdate"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Patient birthdate<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.patient.next-kin" title="Next of kin or contact">next-kin</a><a name="iso-19293-dispense-record.patient.next-kin"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Next of kin or contact<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.patient.notes" title="Notes about the patient">notes</a><a name="iso-19293-dispense-record.patient.notes"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Notes about the patient<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispenser" title="Dispenser">dispenser</a><a name="iso-19293-dispense-record.dispenser"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-group.html" title="BackboneElement">group</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Dispenser<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispenser.dispenser-id" title="ID of the dispenser">dispenser-id</a><a name="iso-19293-dispense-record.dispenser.dispenser-id"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ID of the dispenser<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispensing-org" title="Dispensing organization">dispensing-org</a><a name="iso-19293-dispense-record.dispensing-org"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-group.html" title="BackboneElement">group</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Dispensing organization<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispensing-org.dispensing-org-id" title="ID of the Dispensing Organization">dispensing-org-id</a><a name="iso-19293-dispense-record.dispensing-org.dispensing-org-id"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ID of the Dispensing Organization<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispensing-system" title="Dispensing system">dispensing-system</a><a name="iso-19293-dispense-record.dispensing-system"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-group.html" title="BackboneElement">group</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Dispensing system<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispensing-system.dispensing-system-id" title="Dispensing System ID">dispensing-system-id</a><a name="iso-19293-dispense-record.dispensing-system.dispensing-system-id"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Dispensing System ID<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispensing-system.dispenser-it-system-id" title="Dispensing system - IT ID">dispenser-it-system-id</a><a name="iso-19293-dispense-record.dispensing-system.dispenser-it-system-id"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Dispensing system - IT ID<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.clinical-review" title="Clinical review for dispense">clinical-review</a><a name="iso-19293-dispense-record.clinical-review"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-group.html" title="BackboneElement">group</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Clinical review for dispense<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.clinical-review.clinical-review-findings" title="Clinical review findings">clinical-review-findings</a><a name="iso-19293-dispense-record.clinical-review.clinical-review-findings"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Clinical review findings<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.clinical-review.clinical-review-instructions" title="Instructions resulting from clinical review">clinical-review-instructions</a><a name="iso-19293-dispense-record.clinical-review.clinical-review-instructions"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Instructions resulting from clinical review<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.treatment-changes" title="Treatment changes from before dispense">treatment-changes</a><a name="iso-19293-dispense-record.treatment-changes"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-group.html" title="BackboneElement">group</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Treatment changes from before dispense<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.treatment-changes.new-prescription" title="Reference to new prescription">new-prescription</a><a name="iso-19293-dispense-record.treatment-changes.new-prescription"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reference to new prescription<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.treatment-changes.detailed-posology" title="Detailed posology changes">detailed-posology</a><a name="iso-19293-dispense-record.treatment-changes.detailed-posology"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Detailed posology changes<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.treatment-changes.notes" title="Notes">notes</a><a name="iso-19293-dispense-record.treatment-changes.notes"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Notes<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.treatment-changes.status" title="Status of the treatment changes">status</a><a name="iso-19293-dispense-record.treatment-changes.status"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Status of the treatment changes<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.substitution" title="Substitution">substitution</a><a name="iso-19293-dispense-record.substitution"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-group.html" title="BackboneElement">group</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Substitution<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.substitution.substitution-occurred" title="Whether (and which) substitution occurred">substitution-occurred</a><a name="iso-19293-dispense-record.substitution.substitution-occurred"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Whether (and which) substitution occurred<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.substitution.substitution-reason" title="Substitution reason">substitution-reason</a><a name="iso-19293-dispense-record.substitution.substitution-reason"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Substitution reason<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispensed-item" title="Actual dispensed item">dispensed-item</a><a name="iso-19293-dispense-record.dispensed-item"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-group.html" title="BackboneElement">group</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Actual dispensed item<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck011.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispensed-item.identifier" title="Dispensed item identifier">identifier</a><a name="iso-19293-dispense-record.dispensed-item.identifier"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-group.html" title="BackboneElement">group</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Dispensed item identifier<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispensed-item.identifier.idmp-identifier" title="Dispensed item IDMP identifier">idmp-identifier</a><a name="iso-19293-dispense-record.dispensed-item.identifier.idmp-identifier"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Dispensed item IDMP identifier<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispensed-item.identifier.non-idmp-identifier" title="Dispensed item non-IDMP identifier">non-idmp-identifier</a><a name="iso-19293-dispense-record.dispensed-item.identifier.non-idmp-identifier"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Dispensed item non-IDMP identifier<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispensed-item.qty-dispensed" title="Quantity or amount dispensed">qty-dispensed</a><a name="iso-19293-dispense-record.dispensed-item.qty-dispensed"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Quantity or amount dispensed<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispensed-item.reimbursement-info" title="Reimbursement information">reimbursement-info</a><a name="iso-19293-dispense-record.dispensed-item.reimbursement-info"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reimbursement information<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispensed-item.inventory-location" title="Inventory location from which dispense occurred">inventory-location</a><a name="iso-19293-dispense-record.dispensed-item.inventory-location"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-untyped.html" title="Element">untyped</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Inventory location from which dispense occurred<br/></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="http://example.com/fhir/example/StructureDefinition/iso-19293-dispense-record"/>
+  <version value="1.0.0"/>
+  <name value="dispenseRecord"/>
+  <status value="active"/>
+  <date value="2022-08-22T20:51:54+00:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A record of dispensing of a medicinal product"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://example.com/fhir/example/StructureDefinition/iso-19293-dispense-record"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <element id="iso-19293-dispense-record">
+      <path value="iso-19293-dispense-record"/>
+      <definition value="A record of dispensing of a medicinal product"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="iso-19293-dispense-record.identifier">
+      <path value="iso-19293-dispense-record.identifier"/>
+      <short value="Dispense identifier"/>
+      <definition value="A business identifier of the Dispense"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.identifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.date-time">
+      <path value="iso-19293-dispense-record.date-time"/>
+      <short value="Date/time of the dispense"/>
+      <definition value="Date/time of the dispense"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.date-time"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.prescription">
+      <path value="iso-19293-dispense-record.prescription"/>
+      <short value="Prescription information if available"/>
+      <definition value="Prescription information if available"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.prescription"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/group"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.prescription.prescription-link-or-id">
+      <path value="iso-19293-dispense-record.prescription.prescription-link-or-id"/>
+      <short value="Link or unique ID of the prescription"/>
+      <definition value="Link or unique ID of the prescription"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.prescription.prescription-link-or-id"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.prescription.prescription-content">
+      <path value="iso-19293-dispense-record.prescription.prescription-content"/>
+      <short value="Content of the prescription"/>
+      <definition value="Relevant content of the prescription, repeated in the dispense"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.prescription.prescription-content"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/group"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.prescription.prescription-content.prescriber-id">
+      <path value="iso-19293-dispense-record.prescription.prescription-content.prescriber-id"/>
+      <short value="ID of the prescriber"/>
+      <definition value="ID of the prescriber"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.prescription.prescription-content.prescriber-id"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.prescription.prescription-content.patient-id">
+      <path value="iso-19293-dispense-record.prescription.prescription-content.patient-id"/>
+      <short value="ID of the patient"/>
+      <definition value="ID of the patient"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.prescription.prescription-content.patient-id"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.prescription.prescription-content.prescribed-item">
+      <path value="iso-19293-dispense-record.prescription.prescription-content.prescribed_item"/>
+      <short value="Item prescribed"/>
+      <definition value="Item prescribed"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.prescription.prescription-content.prescribed_item"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/group"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.prescription.prescription-content.prescribed-item.identifier">
+      <path value="iso-19293-dispense-record.prescription.prescription-content.prescribed_item.identifier"/>
+      <short value="product identifier"/>
+      <definition value="product identifier"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.prescription.prescription-content.prescribed_item.identifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.prescription.prescription-content.prescribed-item.posology">
+      <path value="iso-19293-dispense-record.prescription.prescription-content.prescribed_item.posology"/>
+      <short value="Posology for the item"/>
+      <definition value="Posology for the item"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.prescription.prescription-content.prescribed_item.posology"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.prescription.prescription-content.prescribed-item.treatment-date-duration">
+      <path value="iso-19293-dispense-record.prescription.prescription-content.prescribed_item.treatment-date-duration"/>
+      <short value="Treatment date or duration"/>
+      <definition value="Treatment date or duration"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.prescription.prescription-content.prescribed_item.treatment-date-duration"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.prescription.prescription-content.prescribed-item.repetitions-refills-allowed">
+      <path value="iso-19293-dispense-record.prescription.prescription-content.prescribed_item.repetitions-refills-allowed"/>
+      <short value="Repetitions or refills allowed"/>
+      <definition value="Repetitions or refills allowed"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.prescription.prescription-content.prescribed_item.repetitions-refills-allowed"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.patient">
+      <path value="iso-19293-dispense-record.patient"/>
+      <short value="Patient information"/>
+      <definition value="Patient information"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.patient"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/group"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.patient.identifier">
+      <path value="iso-19293-dispense-record.patient.identifier"/>
+      <short value="Patient identifier"/>
+      <definition value="Patient identifier"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.patient.identifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.patient.birthdate">
+      <path value="iso-19293-dispense-record.patient.birthdate"/>
+      <short value="Patient birthdate"/>
+      <definition value="Patient birthdate"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.patient.birthdate"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.patient.next-kin">
+      <path value="iso-19293-dispense-record.patient.next-kin"/>
+      <short value="Next of kin or contact"/>
+      <definition value="Next of kin or contact"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.patient.next-kin"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.patient.notes">
+      <path value="iso-19293-dispense-record.patient.notes"/>
+      <short value="Notes about the patient"/>
+      <definition value="Notes about the patient"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.patient.notes"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispenser">
+      <path value="iso-19293-dispense-record.dispenser"/>
+      <short value="Dispenser"/>
+      <definition value="Dispenser"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.dispenser"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/group"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispenser.dispenser-id">
+      <path value="iso-19293-dispense-record.dispenser.dispenser-id"/>
+      <short value="ID of the dispenser"/>
+      <definition value="ID of the dispenser"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.dispenser.dispenser-id"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispensing-org">
+      <path value="iso-19293-dispense-record.dispensing-org"/>
+      <short value="Dispensing organization"/>
+      <definition value="Dispensing organization"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.dispensing-org"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/group"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispensing-org.dispensing-org-id">
+      <path value="iso-19293-dispense-record.dispensing-org.dispensing-org-id"/>
+      <short value="ID of the Dispensing Organization"/>
+      <definition value="ID of the Dispensing Organization"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.dispensing-org.dispensing-org-id"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispensing-system">
+      <path value="iso-19293-dispense-record.dispensing-system"/>
+      <short value="Dispensing system"/>
+      <definition value="Dispensing system"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.dispensing-system"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/group"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispensing-system.dispensing-system-id">
+      <path value="iso-19293-dispense-record.dispensing-system.dispensing-system-id"/>
+      <short value="Dispensing System ID"/>
+      <definition value="Dispensing System ID"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.dispensing-system.dispensing-system-id"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispensing-system.dispenser-it-system-id">
+      <path value="iso-19293-dispense-record.dispensing-system.dispenser-it-system-id"/>
+      <short value="Dispensing system - IT ID"/>
+      <definition value="Dispensing system - IT ID"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.dispensing-system.dispenser-it-system-id"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.clinical-review">
+      <path value="iso-19293-dispense-record.clinical-review"/>
+      <short value="Clinical review for dispense"/>
+      <definition value="Clinical review for dispense"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.clinical-review"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/group"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.clinical-review.clinical-review-findings">
+      <path value="iso-19293-dispense-record.clinical-review.clinical-review-findings"/>
+      <short value="Clinical review findings"/>
+      <definition value="Clinical review findings"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.clinical-review.clinical-review-findings"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.clinical-review.clinical-review-instructions">
+      <path value="iso-19293-dispense-record.clinical-review.clinical-review-instructions"/>
+      <short value="Instructions resulting from clinical review"/>
+      <definition value="Instructions resulting from clinical review"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.clinical-review.clinical-review-instructions"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.treatment-changes">
+      <path value="iso-19293-dispense-record.treatment-changes"/>
+      <short value="Treatment changes from before dispense"/>
+      <definition value="Treatment changes from before dispense"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.treatment-changes"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/group"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.treatment-changes.new-prescription">
+      <path value="iso-19293-dispense-record.treatment-changes.new-prescription"/>
+      <short value="Reference to new prescription"/>
+      <definition value="Reference to new prescription"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.treatment-changes.new-prescription"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.treatment-changes.detailed-posology">
+      <path value="iso-19293-dispense-record.treatment-changes.detailed-posology"/>
+      <short value="Detailed posology changes"/>
+      <definition value="Detailed posology changes"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.treatment-changes.detailed-posology"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.treatment-changes.notes">
+      <path value="iso-19293-dispense-record.treatment-changes.notes"/>
+      <short value="Notes"/>
+      <definition value="Notes"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.treatment-changes.notes"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.treatment-changes.status">
+      <path value="iso-19293-dispense-record.treatment-changes.status"/>
+      <short value="Status of the treatment changes"/>
+      <definition value="Status of the treatment changes"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.treatment-changes.status"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.substitution">
+      <path value="iso-19293-dispense-record.substitution"/>
+      <short value="Substitution"/>
+      <definition value="Substitution"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.substitution"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/group"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.substitution.substitution-occurred">
+      <path value="iso-19293-dispense-record.substitution.substitution-occurred"/>
+      <short value="Whether (and which) substitution occurred"/>
+      <definition value="Whether (and which) substitution occurred"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.substitution.substitution-occurred"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.substitution.substitution-reason">
+      <path value="iso-19293-dispense-record.substitution.substitution-reason"/>
+      <short value="Substitution reason"/>
+      <definition value="Substitution reason"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.substitution.substitution-reason"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispensed-item">
+      <path value="iso-19293-dispense-record.dispensed-item"/>
+      <short value="Actual dispensed item"/>
+      <definition value="Actual dispensed item"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.dispensed-item"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/group"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispensed-item.identifier">
+      <path value="iso-19293-dispense-record.dispensed-item.identifier"/>
+      <short value="Dispensed item identifier"/>
+      <definition value="Dispensed item identifier"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.dispensed-item.identifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/group"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispensed-item.identifier.idmp-identifier">
+      <path value="iso-19293-dispense-record.dispensed-item.identifier.idmp-identifier"/>
+      <short value="Dispensed item IDMP identifier"/>
+      <definition value="Dispensed item IDMP identifier"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.dispensed-item.identifier.idmp-identifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispensed-item.identifier.non-idmp-identifier">
+      <path value="iso-19293-dispense-record.dispensed-item.identifier.non-idmp-identifier"/>
+      <short value="Dispensed item non-IDMP identifier"/>
+      <definition value="Dispensed item non-IDMP identifier"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.dispensed-item.identifier.non-idmp-identifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispensed-item.qty-dispensed">
+      <path value="iso-19293-dispense-record.dispensed-item.qty-dispensed"/>
+      <short value="Quantity or amount dispensed"/>
+      <definition value="Quantity or amount dispensed"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.dispensed-item.qty-dispensed"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispensed-item.reimbursement-info">
+      <path value="iso-19293-dispense-record.dispensed-item.reimbursement-info"/>
+      <short value="Reimbursement information"/>
+      <definition value="Reimbursement information"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.dispensed-item.reimbursement-info"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispensed-item.inventory-location">
+      <path value="iso-19293-dispense-record.dispensed-item.inventory-location"/>
+      <short value="Inventory location from which dispense occurred"/>
+      <definition value="Inventory location from which dispense occurred"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="iso-19293-dispense-record.dispensed-item.inventory-location"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="iso-19293-dispense-record">
+      <path value="iso-19293-dispense-record"/>
+      <definition value="A record of dispensing of a medicinal product"/>
+    </element>
+    <element id="iso-19293-dispense-record.identifier">
+      <path value="iso-19293-dispense-record.identifier"/>
+      <short value="Dispense identifier"/>
+      <definition value="A business identifier of the Dispense"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.date-time">
+      <path value="iso-19293-dispense-record.date-time"/>
+      <short value="Date/time of the dispense"/>
+      <definition value="Date/time of the dispense"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.prescription">
+      <path value="iso-19293-dispense-record.prescription"/>
+      <short value="Prescription information if available"/>
+      <definition value="Prescription information if available"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/group"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.prescription.prescription-link-or-id">
+      <path value="iso-19293-dispense-record.prescription.prescription-link-or-id"/>
+      <short value="Link or unique ID of the prescription"/>
+      <definition value="Link or unique ID of the prescription"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.prescription.prescription-content">
+      <path value="iso-19293-dispense-record.prescription.prescription-content"/>
+      <short value="Content of the prescription"/>
+      <definition value="Relevant content of the prescription, repeated in the dispense"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/group"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.prescription.prescription-content.prescriber-id">
+      <path value="iso-19293-dispense-record.prescription.prescription-content.prescriber-id"/>
+      <short value="ID of the prescriber"/>
+      <definition value="ID of the prescriber"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.prescription.prescription-content.patient-id">
+      <path value="iso-19293-dispense-record.prescription.prescription-content.patient-id"/>
+      <short value="ID of the patient"/>
+      <definition value="ID of the patient"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.prescription.prescription-content.prescribed-item">
+      <path value="iso-19293-dispense-record.prescription.prescription-content.prescribed_item"/>
+      <short value="Item prescribed"/>
+      <definition value="Item prescribed"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/group"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.prescription.prescription-content.prescribed-item.identifier">
+      <path value="iso-19293-dispense-record.prescription.prescription-content.prescribed_item.identifier"/>
+      <short value="product identifier"/>
+      <definition value="product identifier"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.prescription.prescription-content.prescribed-item.posology">
+      <path value="iso-19293-dispense-record.prescription.prescription-content.prescribed_item.posology"/>
+      <short value="Posology for the item"/>
+      <definition value="Posology for the item"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.prescription.prescription-content.prescribed-item.treatment-date-duration">
+      <path value="iso-19293-dispense-record.prescription.prescription-content.prescribed_item.treatment-date-duration"/>
+      <short value="Treatment date or duration"/>
+      <definition value="Treatment date or duration"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.prescription.prescription-content.prescribed-item.repetitions-refills-allowed">
+      <path value="iso-19293-dispense-record.prescription.prescription-content.prescribed_item.repetitions-refills-allowed"/>
+      <short value="Repetitions or refills allowed"/>
+      <definition value="Repetitions or refills allowed"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.patient">
+      <path value="iso-19293-dispense-record.patient"/>
+      <short value="Patient information"/>
+      <definition value="Patient information"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/group"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.patient.identifier">
+      <path value="iso-19293-dispense-record.patient.identifier"/>
+      <short value="Patient identifier"/>
+      <definition value="Patient identifier"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.patient.birthdate">
+      <path value="iso-19293-dispense-record.patient.birthdate"/>
+      <short value="Patient birthdate"/>
+      <definition value="Patient birthdate"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.patient.next-kin">
+      <path value="iso-19293-dispense-record.patient.next-kin"/>
+      <short value="Next of kin or contact"/>
+      <definition value="Next of kin or contact"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.patient.notes">
+      <path value="iso-19293-dispense-record.patient.notes"/>
+      <short value="Notes about the patient"/>
+      <definition value="Notes about the patient"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispenser">
+      <path value="iso-19293-dispense-record.dispenser"/>
+      <short value="Dispenser"/>
+      <definition value="Dispenser"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/group"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispenser.dispenser-id">
+      <path value="iso-19293-dispense-record.dispenser.dispenser-id"/>
+      <short value="ID of the dispenser"/>
+      <definition value="ID of the dispenser"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispensing-org">
+      <path value="iso-19293-dispense-record.dispensing-org"/>
+      <short value="Dispensing organization"/>
+      <definition value="Dispensing organization"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/group"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispensing-org.dispensing-org-id">
+      <path value="iso-19293-dispense-record.dispensing-org.dispensing-org-id"/>
+      <short value="ID of the Dispensing Organization"/>
+      <definition value="ID of the Dispensing Organization"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispensing-system">
+      <path value="iso-19293-dispense-record.dispensing-system"/>
+      <short value="Dispensing system"/>
+      <definition value="Dispensing system"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/group"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispensing-system.dispensing-system-id">
+      <path value="iso-19293-dispense-record.dispensing-system.dispensing-system-id"/>
+      <short value="Dispensing System ID"/>
+      <definition value="Dispensing System ID"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispensing-system.dispenser-it-system-id">
+      <path value="iso-19293-dispense-record.dispensing-system.dispenser-it-system-id"/>
+      <short value="Dispensing system - IT ID"/>
+      <definition value="Dispensing system - IT ID"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.clinical-review">
+      <path value="iso-19293-dispense-record.clinical-review"/>
+      <short value="Clinical review for dispense"/>
+      <definition value="Clinical review for dispense"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/group"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.clinical-review.clinical-review-findings">
+      <path value="iso-19293-dispense-record.clinical-review.clinical-review-findings"/>
+      <short value="Clinical review findings"/>
+      <definition value="Clinical review findings"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.clinical-review.clinical-review-instructions">
+      <path value="iso-19293-dispense-record.clinical-review.clinical-review-instructions"/>
+      <short value="Instructions resulting from clinical review"/>
+      <definition value="Instructions resulting from clinical review"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.treatment-changes">
+      <path value="iso-19293-dispense-record.treatment-changes"/>
+      <short value="Treatment changes from before dispense"/>
+      <definition value="Treatment changes from before dispense"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/group"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.treatment-changes.new-prescription">
+      <path value="iso-19293-dispense-record.treatment-changes.new-prescription"/>
+      <short value="Reference to new prescription"/>
+      <definition value="Reference to new prescription"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.treatment-changes.detailed-posology">
+      <path value="iso-19293-dispense-record.treatment-changes.detailed-posology"/>
+      <short value="Detailed posology changes"/>
+      <definition value="Detailed posology changes"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.treatment-changes.notes">
+      <path value="iso-19293-dispense-record.treatment-changes.notes"/>
+      <short value="Notes"/>
+      <definition value="Notes"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.treatment-changes.status">
+      <path value="iso-19293-dispense-record.treatment-changes.status"/>
+      <short value="Status of the treatment changes"/>
+      <definition value="Status of the treatment changes"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.substitution">
+      <path value="iso-19293-dispense-record.substitution"/>
+      <short value="Substitution"/>
+      <definition value="Substitution"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/group"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.substitution.substitution-occurred">
+      <path value="iso-19293-dispense-record.substitution.substitution-occurred"/>
+      <short value="Whether (and which) substitution occurred"/>
+      <definition value="Whether (and which) substitution occurred"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.substitution.substitution-reason">
+      <path value="iso-19293-dispense-record.substitution.substitution-reason"/>
+      <short value="Substitution reason"/>
+      <definition value="Substitution reason"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispensed-item">
+      <path value="iso-19293-dispense-record.dispensed-item"/>
+      <short value="Actual dispensed item"/>
+      <definition value="Actual dispensed item"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/group"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispensed-item.identifier">
+      <path value="iso-19293-dispense-record.dispensed-item.identifier"/>
+      <short value="Dispensed item identifier"/>
+      <definition value="Dispensed item identifier"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/group"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispensed-item.identifier.idmp-identifier">
+      <path value="iso-19293-dispense-record.dispensed-item.identifier.idmp-identifier"/>
+      <short value="Dispensed item IDMP identifier"/>
+      <definition value="Dispensed item IDMP identifier"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispensed-item.identifier.non-idmp-identifier">
+      <path value="iso-19293-dispense-record.dispensed-item.identifier.non-idmp-identifier"/>
+      <short value="Dispensed item non-IDMP identifier"/>
+      <definition value="Dispensed item non-IDMP identifier"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispensed-item.qty-dispensed">
+      <path value="iso-19293-dispense-record.dispensed-item.qty-dispensed"/>
+      <short value="Quantity or amount dispensed"/>
+      <definition value="Quantity or amount dispensed"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispensed-item.reimbursement-info">
+      <path value="iso-19293-dispense-record.dispensed-item.reimbursement-info"/>
+      <short value="Reimbursement information"/>
+      <definition value="Reimbursement information"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+    <element id="iso-19293-dispense-record.dispensed-item.inventory-location">
+      <path value="iso-19293-dispense-record.dispensed-item.inventory-location"/>
+      <short value="Inventory location from which dispense occurred"/>
+      <definition value="Inventory location from which dispense occurred"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+        <profile value="http://example.com/fhir/example/StructureDefinition/untyped"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
