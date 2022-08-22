@@ -1,0 +1,1737 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/StructureDefinition/iso-19293-dispense-record> a fhir:StructureDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "iso-19293-dispense-record"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record\" title=\"A record of dispensing of a medicinal product\">iso-19293-dispense-record</a><a name=\"iso-19293-dispense-record\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.identifier\" title=\"A business identifier of the Dispense\">identifier</a><a name=\"iso-19293-dispense-record.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Dispense identifier<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.date-time\" title=\"Date/time of the dispense\">date-time</a><a name=\"iso-19293-dispense-record.date-time\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date/time of the dispense<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.prescription\" title=\"Prescription information if available\">prescription</a><a name=\"iso-19293-dispense-record.prescription\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-group.html\" title=\"BackboneElement\">group</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Prescription information if available<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.prescription.prescription-link-or-id\" title=\"Link or unique ID of the prescription\">prescription-link-or-id</a><a name=\"iso-19293-dispense-record.prescription.prescription-link-or-id\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Link or unique ID of the prescription<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.prescription.prescription-content\" title=\"Relevant content of the prescription, repeated in the dispense\">prescription-content</a><a name=\"iso-19293-dispense-record.prescription.prescription-content\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-group.html\" title=\"BackboneElement\">group</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Content of the prescription<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.prescription.prescription-content.prescriber-id\" title=\"ID of the prescriber\">prescriber-id</a><a name=\"iso-19293-dispense-record.prescription.prescription-content.prescriber-id\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ID of the prescriber<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.prescription.prescription-content.patient-id\" title=\"ID of the patient\">patient-id</a><a name=\"iso-19293-dispense-record.prescription.prescription-content.patient-id\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ID of the patient<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1001.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.prescription.prescription-content.prescribed-item\" title=\"Item prescribed\">prescribed_item</a><a name=\"iso-19293-dispense-record.prescription.prescription-content.prescribed_item\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-group.html\" title=\"BackboneElement\">group</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item prescribed<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.prescription.prescription-content.prescribed-item.identifier\" title=\"product identifier\">identifier</a><a name=\"iso-19293-dispense-record.prescription.prescription-content.prescribed_item.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">product identifier<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.prescription.prescription-content.prescribed-item.posology\" title=\"Posology for the item\">posology</a><a name=\"iso-19293-dispense-record.prescription.prescription-content.prescribed_item.posology\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Posology for the item<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.prescription.prescription-content.prescribed-item.treatment-date-duration\" title=\"Treatment date or duration\">treatment-date-duration</a><a name=\"iso-19293-dispense-record.prescription.prescription-content.prescribed_item.treatment-date-duration\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Treatment date or duration<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.prescription.prescription-content.prescribed-item.repetitions-refills-allowed\" title=\"Repetitions or refills allowed\">repetitions-refills-allowed</a><a name=\"iso-19293-dispense-record.prescription.prescription-content.prescribed_item.repetitions-refills-allowed\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Repetitions or refills allowed<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.patient\" title=\"Patient information\">patient</a><a name=\"iso-19293-dispense-record.patient\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-group.html\" title=\"BackboneElement\">group</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Patient information<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.patient.identifier\" title=\"Patient identifier\">identifier</a><a name=\"iso-19293-dispense-record.patient.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Patient identifier<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.patient.birthdate\" title=\"Patient birthdate\">birthdate</a><a name=\"iso-19293-dispense-record.patient.birthdate\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Patient birthdate<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.patient.next-kin\" title=\"Next of kin or contact\">next-kin</a><a name=\"iso-19293-dispense-record.patient.next-kin\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Next of kin or contact<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.patient.notes\" title=\"Notes about the patient\">notes</a><a name=\"iso-19293-dispense-record.patient.notes\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Notes about the patient<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispenser\" title=\"Dispenser\">dispenser</a><a name=\"iso-19293-dispense-record.dispenser\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-group.html\" title=\"BackboneElement\">group</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Dispenser<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispenser.dispenser-id\" title=\"ID of the dispenser\">dispenser-id</a><a name=\"iso-19293-dispense-record.dispenser.dispenser-id\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ID of the dispenser<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispensing-org\" title=\"Dispensing organization\">dispensing-org</a><a name=\"iso-19293-dispense-record.dispensing-org\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-group.html\" title=\"BackboneElement\">group</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Dispensing organization<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispensing-org.dispensing-org-id\" title=\"ID of the Dispensing Organization\">dispensing-org-id</a><a name=\"iso-19293-dispense-record.dispensing-org.dispensing-org-id\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ID of the Dispensing Organization<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispensing-system\" title=\"Dispensing system\">dispensing-system</a><a name=\"iso-19293-dispense-record.dispensing-system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-group.html\" title=\"BackboneElement\">group</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Dispensing system<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispensing-system.dispensing-system-id\" title=\"Dispensing System ID\">dispensing-system-id</a><a name=\"iso-19293-dispense-record.dispensing-system.dispensing-system-id\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Dispensing System ID<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispensing-system.dispenser-it-system-id\" title=\"Dispensing system - IT ID\">dispenser-it-system-id</a><a name=\"iso-19293-dispense-record.dispensing-system.dispenser-it-system-id\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Dispensing system - IT ID<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.clinical-review\" title=\"Clinical review for dispense\">clinical-review</a><a name=\"iso-19293-dispense-record.clinical-review\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-group.html\" title=\"BackboneElement\">group</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Clinical review for dispense<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.clinical-review.clinical-review-findings\" title=\"Clinical review findings\">clinical-review-findings</a><a name=\"iso-19293-dispense-record.clinical-review.clinical-review-findings\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Clinical review findings<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.clinical-review.clinical-review-instructions\" title=\"Instructions resulting from clinical review\">clinical-review-instructions</a><a name=\"iso-19293-dispense-record.clinical-review.clinical-review-instructions\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Instructions resulting from clinical review<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.treatment-changes\" title=\"Treatment changes from before dispense\">treatment-changes</a><a name=\"iso-19293-dispense-record.treatment-changes\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-group.html\" title=\"BackboneElement\">group</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Treatment changes from before dispense<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.treatment-changes.new-prescription\" title=\"Reference to new prescription\">new-prescription</a><a name=\"iso-19293-dispense-record.treatment-changes.new-prescription\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reference to new prescription<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.treatment-changes.detailed-posology\" title=\"Detailed posology changes\">detailed-posology</a><a name=\"iso-19293-dispense-record.treatment-changes.detailed-posology\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Detailed posology changes<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.treatment-changes.notes\" title=\"Notes\">notes</a><a name=\"iso-19293-dispense-record.treatment-changes.notes\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Notes<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.treatment-changes.status\" title=\"Status of the treatment changes\">status</a><a name=\"iso-19293-dispense-record.treatment-changes.status\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Status of the treatment changes<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.substitution\" title=\"Substitution\">substitution</a><a name=\"iso-19293-dispense-record.substitution\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-group.html\" title=\"BackboneElement\">group</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Substitution<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.substitution.substitution-occurred\" title=\"Whether (and which) substitution occurred\">substitution-occurred</a><a name=\"iso-19293-dispense-record.substitution.substitution-occurred\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Whether (and which) substitution occurred<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.substitution.substitution-reason\" title=\"Substitution reason\">substitution-reason</a><a name=\"iso-19293-dispense-record.substitution.substitution-reason\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Substitution reason<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispensed-item\" title=\"Actual dispensed item\">dispensed-item</a><a name=\"iso-19293-dispense-record.dispensed-item\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-group.html\" title=\"BackboneElement\">group</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Actual dispensed item<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck011.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispensed-item.identifier\" title=\"Dispensed item identifier\">identifier</a><a name=\"iso-19293-dispense-record.dispensed-item.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-group.html\" title=\"BackboneElement\">group</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Dispensed item identifier<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispensed-item.identifier.idmp-identifier\" title=\"Dispensed item IDMP identifier\">idmp-identifier</a><a name=\"iso-19293-dispense-record.dispensed-item.identifier.idmp-identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Dispensed item IDMP identifier<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispensed-item.identifier.non-idmp-identifier\" title=\"Dispensed item non-IDMP identifier\">non-idmp-identifier</a><a name=\"iso-19293-dispense-record.dispensed-item.identifier.non-idmp-identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Dispensed item non-IDMP identifier<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispensed-item.qty-dispensed\" title=\"Quantity or amount dispensed\">qty-dispensed</a><a name=\"iso-19293-dispense-record.dispensed-item.qty-dispensed\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Quantity or amount dispensed<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispensed-item.reimbursement-info\" title=\"Reimbursement information\">reimbursement-info</a><a name=\"iso-19293-dispense-record.dispensed-item.reimbursement-info\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reimbursement information<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-iso-19293-dispense-record-definitions.html#iso-19293-dispense-record.dispensed-item.inventory-location\" title=\"Inventory location from which dispense occurred\">inventory-location</a><a name=\"iso-19293-dispense-record.dispensed-item.inventory-location\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-untyped.html\" title=\"Element\">untyped</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Inventory location from which dispense occurred<br/></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  ];
+  fhir:StructureDefinition.url [ fhir:value "http://example.com/fhir/example/StructureDefinition/iso-19293-dispense-record"];
+  fhir:StructureDefinition.version [ fhir:value "1.0.0"];
+  fhir:StructureDefinition.name [ fhir:value "dispenseRecord"];
+  fhir:StructureDefinition.status [ fhir:value "active"];
+  fhir:StructureDefinition.date [ fhir:value "2022-08-22T20:51:54+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.publisher [ fhir:value "My Organization"];
+  fhir:StructureDefinition.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "My Organization" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://example.com/committees" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "my-group@example.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Bob Smith" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "bobsmith@example.com" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ];
+  fhir:StructureDefinition.description [ fhir:value "A record of dispensing of a medicinal product"];
+  fhir:StructureDefinition.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ];
+       fhir:Coding.display [ fhir:value "World" ]
+     ]
+  ];
+  fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
+  fhir:StructureDefinition.mapping [
+     fhir:index 0;
+     fhir:StructureDefinition.mapping.identity [ fhir:value "rim" ];
+     fhir:StructureDefinition.mapping.uri [ fhir:value "http://hl7.org/v3" ];
+     fhir:StructureDefinition.mapping.name [ fhir:value "RIM Mapping" ]
+  ];
+  fhir:StructureDefinition.kind [ fhir:value "logical"];
+  fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean];
+  fhir:StructureDefinition.type [ fhir:value "http://example.com/fhir/example/StructureDefinition/iso-19293-dispense-record"];
+  fhir:StructureDefinition.baseDefinition [
+     fhir:value "http://hl7.org/fhir/StructureDefinition/Base";
+     fhir:link <http://hl7.org/fhir/StructureDefinition/Base>
+  ];
+  fhir:StructureDefinition.derivation [ fhir:value "specialization"];
+  fhir:StructureDefinition.snapshot [
+     fhir:StructureDefinition.snapshot.element [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record" ];
+       fhir:ElementDefinition.definition [ fhir:value "A record of dispensing of a medicinal product" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Base" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.identifier" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.identifier" ];
+       fhir:ElementDefinition.short [ fhir:value "Dispense identifier" ];
+       fhir:ElementDefinition.definition [ fhir:value "A business identifier of the Dispense" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.identifier" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.date-time" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.date-time" ];
+       fhir:ElementDefinition.short [ fhir:value "Date/time of the dispense" ];
+       fhir:ElementDefinition.definition [ fhir:value "Date/time of the dispense" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.date-time" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.prescription" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.prescription" ];
+       fhir:ElementDefinition.short [ fhir:value "Prescription information if available" ];
+       fhir:ElementDefinition.definition [ fhir:value "Prescription information if available" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.prescription" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/group";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/group>
+         ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.prescription.prescription-link-or-id" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-link-or-id" ];
+       fhir:ElementDefinition.short [ fhir:value "Link or unique ID of the prescription" ];
+       fhir:ElementDefinition.definition [ fhir:value "Link or unique ID of the prescription" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-link-or-id" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.prescription.prescription-content" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-content" ];
+       fhir:ElementDefinition.short [ fhir:value "Content of the prescription" ];
+       fhir:ElementDefinition.definition [ fhir:value "Relevant content of the prescription, repeated in the dispense" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-content" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/group";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/group>
+         ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescriber-id" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescriber-id" ];
+       fhir:ElementDefinition.short [ fhir:value "ID of the prescriber" ];
+       fhir:ElementDefinition.definition [ fhir:value "ID of the prescriber" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescriber-id" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.patient-id" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.patient-id" ];
+       fhir:ElementDefinition.short [ fhir:value "ID of the patient" ];
+       fhir:ElementDefinition.definition [ fhir:value "ID of the patient" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.patient-id" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescribed-item" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescribed_item" ];
+       fhir:ElementDefinition.short [ fhir:value "Item prescribed" ];
+       fhir:ElementDefinition.definition [ fhir:value "Item prescribed" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescribed_item" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/group";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/group>
+         ]
+       ]
+     ], [
+       fhir:index 9;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescribed-item.identifier" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescribed_item.identifier" ];
+       fhir:ElementDefinition.short [ fhir:value "product identifier" ];
+       fhir:ElementDefinition.definition [ fhir:value "product identifier" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescribed_item.identifier" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 10;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescribed-item.posology" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescribed_item.posology" ];
+       fhir:ElementDefinition.short [ fhir:value "Posology for the item" ];
+       fhir:ElementDefinition.definition [ fhir:value "Posology for the item" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescribed_item.posology" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 11;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescribed-item.treatment-date-duration" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescribed_item.treatment-date-duration" ];
+       fhir:ElementDefinition.short [ fhir:value "Treatment date or duration" ];
+       fhir:ElementDefinition.definition [ fhir:value "Treatment date or duration" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescribed_item.treatment-date-duration" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 12;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescribed-item.repetitions-refills-allowed" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescribed_item.repetitions-refills-allowed" ];
+       fhir:ElementDefinition.short [ fhir:value "Repetitions or refills allowed" ];
+       fhir:ElementDefinition.definition [ fhir:value "Repetitions or refills allowed" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescribed_item.repetitions-refills-allowed" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 13;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.patient" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.patient" ];
+       fhir:ElementDefinition.short [ fhir:value "Patient information" ];
+       fhir:ElementDefinition.definition [ fhir:value "Patient information" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.patient" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/group";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/group>
+         ]
+       ]
+     ], [
+       fhir:index 14;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.patient.identifier" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.patient.identifier" ];
+       fhir:ElementDefinition.short [ fhir:value "Patient identifier" ];
+       fhir:ElementDefinition.definition [ fhir:value "Patient identifier" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.patient.identifier" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 15;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.patient.birthdate" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.patient.birthdate" ];
+       fhir:ElementDefinition.short [ fhir:value "Patient birthdate" ];
+       fhir:ElementDefinition.definition [ fhir:value "Patient birthdate" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.patient.birthdate" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 16;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.patient.next-kin" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.patient.next-kin" ];
+       fhir:ElementDefinition.short [ fhir:value "Next of kin or contact" ];
+       fhir:ElementDefinition.definition [ fhir:value "Next of kin or contact" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.patient.next-kin" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 17;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.patient.notes" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.patient.notes" ];
+       fhir:ElementDefinition.short [ fhir:value "Notes about the patient" ];
+       fhir:ElementDefinition.definition [ fhir:value "Notes about the patient" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.patient.notes" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 18;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispenser" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispenser" ];
+       fhir:ElementDefinition.short [ fhir:value "Dispenser" ];
+       fhir:ElementDefinition.definition [ fhir:value "Dispenser" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.dispenser" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/group";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/group>
+         ]
+       ]
+     ], [
+       fhir:index 19;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispenser.dispenser-id" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispenser.dispenser-id" ];
+       fhir:ElementDefinition.short [ fhir:value "ID of the dispenser" ];
+       fhir:ElementDefinition.definition [ fhir:value "ID of the dispenser" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.dispenser.dispenser-id" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 20;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispensing-org" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispensing-org" ];
+       fhir:ElementDefinition.short [ fhir:value "Dispensing organization" ];
+       fhir:ElementDefinition.definition [ fhir:value "Dispensing organization" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.dispensing-org" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/group";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/group>
+         ]
+       ]
+     ], [
+       fhir:index 21;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispensing-org.dispensing-org-id" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispensing-org.dispensing-org-id" ];
+       fhir:ElementDefinition.short [ fhir:value "ID of the Dispensing Organization" ];
+       fhir:ElementDefinition.definition [ fhir:value "ID of the Dispensing Organization" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.dispensing-org.dispensing-org-id" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 22;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispensing-system" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispensing-system" ];
+       fhir:ElementDefinition.short [ fhir:value "Dispensing system" ];
+       fhir:ElementDefinition.definition [ fhir:value "Dispensing system" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.dispensing-system" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/group";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/group>
+         ]
+       ]
+     ], [
+       fhir:index 23;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispensing-system.dispensing-system-id" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispensing-system.dispensing-system-id" ];
+       fhir:ElementDefinition.short [ fhir:value "Dispensing System ID" ];
+       fhir:ElementDefinition.definition [ fhir:value "Dispensing System ID" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.dispensing-system.dispensing-system-id" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 24;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispensing-system.dispenser-it-system-id" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispensing-system.dispenser-it-system-id" ];
+       fhir:ElementDefinition.short [ fhir:value "Dispensing system - IT ID" ];
+       fhir:ElementDefinition.definition [ fhir:value "Dispensing system - IT ID" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.dispensing-system.dispenser-it-system-id" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 25;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.clinical-review" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.clinical-review" ];
+       fhir:ElementDefinition.short [ fhir:value "Clinical review for dispense" ];
+       fhir:ElementDefinition.definition [ fhir:value "Clinical review for dispense" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.clinical-review" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/group";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/group>
+         ]
+       ]
+     ], [
+       fhir:index 26;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.clinical-review.clinical-review-findings" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.clinical-review.clinical-review-findings" ];
+       fhir:ElementDefinition.short [ fhir:value "Clinical review findings" ];
+       fhir:ElementDefinition.definition [ fhir:value "Clinical review findings" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.clinical-review.clinical-review-findings" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 27;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.clinical-review.clinical-review-instructions" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.clinical-review.clinical-review-instructions" ];
+       fhir:ElementDefinition.short [ fhir:value "Instructions resulting from clinical review" ];
+       fhir:ElementDefinition.definition [ fhir:value "Instructions resulting from clinical review" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.clinical-review.clinical-review-instructions" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 28;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.treatment-changes" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.treatment-changes" ];
+       fhir:ElementDefinition.short [ fhir:value "Treatment changes from before dispense" ];
+       fhir:ElementDefinition.definition [ fhir:value "Treatment changes from before dispense" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.treatment-changes" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/group";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/group>
+         ]
+       ]
+     ], [
+       fhir:index 29;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.treatment-changes.new-prescription" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.treatment-changes.new-prescription" ];
+       fhir:ElementDefinition.short [ fhir:value "Reference to new prescription" ];
+       fhir:ElementDefinition.definition [ fhir:value "Reference to new prescription" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.treatment-changes.new-prescription" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 30;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.treatment-changes.detailed-posology" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.treatment-changes.detailed-posology" ];
+       fhir:ElementDefinition.short [ fhir:value "Detailed posology changes" ];
+       fhir:ElementDefinition.definition [ fhir:value "Detailed posology changes" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.treatment-changes.detailed-posology" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 31;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.treatment-changes.notes" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.treatment-changes.notes" ];
+       fhir:ElementDefinition.short [ fhir:value "Notes" ];
+       fhir:ElementDefinition.definition [ fhir:value "Notes" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.treatment-changes.notes" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 32;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.treatment-changes.status" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.treatment-changes.status" ];
+       fhir:ElementDefinition.short [ fhir:value "Status of the treatment changes" ];
+       fhir:ElementDefinition.definition [ fhir:value "Status of the treatment changes" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.treatment-changes.status" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 33;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.substitution" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.substitution" ];
+       fhir:ElementDefinition.short [ fhir:value "Substitution" ];
+       fhir:ElementDefinition.definition [ fhir:value "Substitution" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.substitution" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/group";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/group>
+         ]
+       ]
+     ], [
+       fhir:index 34;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.substitution.substitution-occurred" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.substitution.substitution-occurred" ];
+       fhir:ElementDefinition.short [ fhir:value "Whether (and which) substitution occurred" ];
+       fhir:ElementDefinition.definition [ fhir:value "Whether (and which) substitution occurred" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.substitution.substitution-occurred" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 35;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.substitution.substitution-reason" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.substitution.substitution-reason" ];
+       fhir:ElementDefinition.short [ fhir:value "Substitution reason" ];
+       fhir:ElementDefinition.definition [ fhir:value "Substitution reason" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.substitution.substitution-reason" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 36;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispensed-item" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispensed-item" ];
+       fhir:ElementDefinition.short [ fhir:value "Actual dispensed item" ];
+       fhir:ElementDefinition.definition [ fhir:value "Actual dispensed item" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.dispensed-item" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/group";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/group>
+         ]
+       ]
+     ], [
+       fhir:index 37;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispensed-item.identifier" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispensed-item.identifier" ];
+       fhir:ElementDefinition.short [ fhir:value "Dispensed item identifier" ];
+       fhir:ElementDefinition.definition [ fhir:value "Dispensed item identifier" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.dispensed-item.identifier" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/group";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/group>
+         ]
+       ]
+     ], [
+       fhir:index 38;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispensed-item.identifier.idmp-identifier" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispensed-item.identifier.idmp-identifier" ];
+       fhir:ElementDefinition.short [ fhir:value "Dispensed item IDMP identifier" ];
+       fhir:ElementDefinition.definition [ fhir:value "Dispensed item IDMP identifier" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.dispensed-item.identifier.idmp-identifier" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 39;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispensed-item.identifier.non-idmp-identifier" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispensed-item.identifier.non-idmp-identifier" ];
+       fhir:ElementDefinition.short [ fhir:value "Dispensed item non-IDMP identifier" ];
+       fhir:ElementDefinition.definition [ fhir:value "Dispensed item non-IDMP identifier" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.dispensed-item.identifier.non-idmp-identifier" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 40;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispensed-item.qty-dispensed" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispensed-item.qty-dispensed" ];
+       fhir:ElementDefinition.short [ fhir:value "Quantity or amount dispensed" ];
+       fhir:ElementDefinition.definition [ fhir:value "Quantity or amount dispensed" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.dispensed-item.qty-dispensed" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 41;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispensed-item.reimbursement-info" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispensed-item.reimbursement-info" ];
+       fhir:ElementDefinition.short [ fhir:value "Reimbursement information" ];
+       fhir:ElementDefinition.definition [ fhir:value "Reimbursement information" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.dispensed-item.reimbursement-info" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 42;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispensed-item.inventory-location" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispensed-item.inventory-location" ];
+       fhir:ElementDefinition.short [ fhir:value "Inventory location from which dispense occurred" ];
+       fhir:ElementDefinition.definition [ fhir:value "Inventory location from which dispense occurred" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "iso-19293-dispense-record.dispensed-item.inventory-location" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ]
+  ];
+  fhir:StructureDefinition.differential [
+     fhir:StructureDefinition.differential.element [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record" ];
+       fhir:ElementDefinition.definition [ fhir:value "A record of dispensing of a medicinal product" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.identifier" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.identifier" ];
+       fhir:ElementDefinition.short [ fhir:value "Dispense identifier" ];
+       fhir:ElementDefinition.definition [ fhir:value "A business identifier of the Dispense" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.date-time" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.date-time" ];
+       fhir:ElementDefinition.short [ fhir:value "Date/time of the dispense" ];
+       fhir:ElementDefinition.definition [ fhir:value "Date/time of the dispense" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.prescription" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.prescription" ];
+       fhir:ElementDefinition.short [ fhir:value "Prescription information if available" ];
+       fhir:ElementDefinition.definition [ fhir:value "Prescription information if available" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/group";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/group>
+         ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.prescription.prescription-link-or-id" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-link-or-id" ];
+       fhir:ElementDefinition.short [ fhir:value "Link or unique ID of the prescription" ];
+       fhir:ElementDefinition.definition [ fhir:value "Link or unique ID of the prescription" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.prescription.prescription-content" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-content" ];
+       fhir:ElementDefinition.short [ fhir:value "Content of the prescription" ];
+       fhir:ElementDefinition.definition [ fhir:value "Relevant content of the prescription, repeated in the dispense" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/group";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/group>
+         ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescriber-id" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescriber-id" ];
+       fhir:ElementDefinition.short [ fhir:value "ID of the prescriber" ];
+       fhir:ElementDefinition.definition [ fhir:value "ID of the prescriber" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.patient-id" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.patient-id" ];
+       fhir:ElementDefinition.short [ fhir:value "ID of the patient" ];
+       fhir:ElementDefinition.definition [ fhir:value "ID of the patient" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescribed-item" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescribed_item" ];
+       fhir:ElementDefinition.short [ fhir:value "Item prescribed" ];
+       fhir:ElementDefinition.definition [ fhir:value "Item prescribed" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/group";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/group>
+         ]
+       ]
+     ], [
+       fhir:index 9;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescribed-item.identifier" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescribed_item.identifier" ];
+       fhir:ElementDefinition.short [ fhir:value "product identifier" ];
+       fhir:ElementDefinition.definition [ fhir:value "product identifier" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 10;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescribed-item.posology" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescribed_item.posology" ];
+       fhir:ElementDefinition.short [ fhir:value "Posology for the item" ];
+       fhir:ElementDefinition.definition [ fhir:value "Posology for the item" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 11;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescribed-item.treatment-date-duration" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescribed_item.treatment-date-duration" ];
+       fhir:ElementDefinition.short [ fhir:value "Treatment date or duration" ];
+       fhir:ElementDefinition.definition [ fhir:value "Treatment date or duration" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 12;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescribed-item.repetitions-refills-allowed" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.prescription.prescription-content.prescribed_item.repetitions-refills-allowed" ];
+       fhir:ElementDefinition.short [ fhir:value "Repetitions or refills allowed" ];
+       fhir:ElementDefinition.definition [ fhir:value "Repetitions or refills allowed" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 13;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.patient" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.patient" ];
+       fhir:ElementDefinition.short [ fhir:value "Patient information" ];
+       fhir:ElementDefinition.definition [ fhir:value "Patient information" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/group";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/group>
+         ]
+       ]
+     ], [
+       fhir:index 14;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.patient.identifier" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.patient.identifier" ];
+       fhir:ElementDefinition.short [ fhir:value "Patient identifier" ];
+       fhir:ElementDefinition.definition [ fhir:value "Patient identifier" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 15;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.patient.birthdate" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.patient.birthdate" ];
+       fhir:ElementDefinition.short [ fhir:value "Patient birthdate" ];
+       fhir:ElementDefinition.definition [ fhir:value "Patient birthdate" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 16;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.patient.next-kin" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.patient.next-kin" ];
+       fhir:ElementDefinition.short [ fhir:value "Next of kin or contact" ];
+       fhir:ElementDefinition.definition [ fhir:value "Next of kin or contact" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 17;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.patient.notes" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.patient.notes" ];
+       fhir:ElementDefinition.short [ fhir:value "Notes about the patient" ];
+       fhir:ElementDefinition.definition [ fhir:value "Notes about the patient" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 18;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispenser" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispenser" ];
+       fhir:ElementDefinition.short [ fhir:value "Dispenser" ];
+       fhir:ElementDefinition.definition [ fhir:value "Dispenser" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/group";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/group>
+         ]
+       ]
+     ], [
+       fhir:index 19;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispenser.dispenser-id" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispenser.dispenser-id" ];
+       fhir:ElementDefinition.short [ fhir:value "ID of the dispenser" ];
+       fhir:ElementDefinition.definition [ fhir:value "ID of the dispenser" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 20;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispensing-org" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispensing-org" ];
+       fhir:ElementDefinition.short [ fhir:value "Dispensing organization" ];
+       fhir:ElementDefinition.definition [ fhir:value "Dispensing organization" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/group";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/group>
+         ]
+       ]
+     ], [
+       fhir:index 21;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispensing-org.dispensing-org-id" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispensing-org.dispensing-org-id" ];
+       fhir:ElementDefinition.short [ fhir:value "ID of the Dispensing Organization" ];
+       fhir:ElementDefinition.definition [ fhir:value "ID of the Dispensing Organization" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 22;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispensing-system" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispensing-system" ];
+       fhir:ElementDefinition.short [ fhir:value "Dispensing system" ];
+       fhir:ElementDefinition.definition [ fhir:value "Dispensing system" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/group";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/group>
+         ]
+       ]
+     ], [
+       fhir:index 23;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispensing-system.dispensing-system-id" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispensing-system.dispensing-system-id" ];
+       fhir:ElementDefinition.short [ fhir:value "Dispensing System ID" ];
+       fhir:ElementDefinition.definition [ fhir:value "Dispensing System ID" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 24;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispensing-system.dispenser-it-system-id" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispensing-system.dispenser-it-system-id" ];
+       fhir:ElementDefinition.short [ fhir:value "Dispensing system - IT ID" ];
+       fhir:ElementDefinition.definition [ fhir:value "Dispensing system - IT ID" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 25;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.clinical-review" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.clinical-review" ];
+       fhir:ElementDefinition.short [ fhir:value "Clinical review for dispense" ];
+       fhir:ElementDefinition.definition [ fhir:value "Clinical review for dispense" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/group";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/group>
+         ]
+       ]
+     ], [
+       fhir:index 26;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.clinical-review.clinical-review-findings" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.clinical-review.clinical-review-findings" ];
+       fhir:ElementDefinition.short [ fhir:value "Clinical review findings" ];
+       fhir:ElementDefinition.definition [ fhir:value "Clinical review findings" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 27;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.clinical-review.clinical-review-instructions" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.clinical-review.clinical-review-instructions" ];
+       fhir:ElementDefinition.short [ fhir:value "Instructions resulting from clinical review" ];
+       fhir:ElementDefinition.definition [ fhir:value "Instructions resulting from clinical review" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 28;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.treatment-changes" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.treatment-changes" ];
+       fhir:ElementDefinition.short [ fhir:value "Treatment changes from before dispense" ];
+       fhir:ElementDefinition.definition [ fhir:value "Treatment changes from before dispense" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/group";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/group>
+         ]
+       ]
+     ], [
+       fhir:index 29;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.treatment-changes.new-prescription" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.treatment-changes.new-prescription" ];
+       fhir:ElementDefinition.short [ fhir:value "Reference to new prescription" ];
+       fhir:ElementDefinition.definition [ fhir:value "Reference to new prescription" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 30;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.treatment-changes.detailed-posology" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.treatment-changes.detailed-posology" ];
+       fhir:ElementDefinition.short [ fhir:value "Detailed posology changes" ];
+       fhir:ElementDefinition.definition [ fhir:value "Detailed posology changes" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 31;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.treatment-changes.notes" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.treatment-changes.notes" ];
+       fhir:ElementDefinition.short [ fhir:value "Notes" ];
+       fhir:ElementDefinition.definition [ fhir:value "Notes" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 32;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.treatment-changes.status" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.treatment-changes.status" ];
+       fhir:ElementDefinition.short [ fhir:value "Status of the treatment changes" ];
+       fhir:ElementDefinition.definition [ fhir:value "Status of the treatment changes" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 33;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.substitution" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.substitution" ];
+       fhir:ElementDefinition.short [ fhir:value "Substitution" ];
+       fhir:ElementDefinition.definition [ fhir:value "Substitution" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/group";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/group>
+         ]
+       ]
+     ], [
+       fhir:index 34;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.substitution.substitution-occurred" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.substitution.substitution-occurred" ];
+       fhir:ElementDefinition.short [ fhir:value "Whether (and which) substitution occurred" ];
+       fhir:ElementDefinition.definition [ fhir:value "Whether (and which) substitution occurred" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 35;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.substitution.substitution-reason" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.substitution.substitution-reason" ];
+       fhir:ElementDefinition.short [ fhir:value "Substitution reason" ];
+       fhir:ElementDefinition.definition [ fhir:value "Substitution reason" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 36;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispensed-item" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispensed-item" ];
+       fhir:ElementDefinition.short [ fhir:value "Actual dispensed item" ];
+       fhir:ElementDefinition.definition [ fhir:value "Actual dispensed item" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/group";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/group>
+         ]
+       ]
+     ], [
+       fhir:index 37;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispensed-item.identifier" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispensed-item.identifier" ];
+       fhir:ElementDefinition.short [ fhir:value "Dispensed item identifier" ];
+       fhir:ElementDefinition.definition [ fhir:value "Dispensed item identifier" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/group";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/group>
+         ]
+       ]
+     ], [
+       fhir:index 38;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispensed-item.identifier.idmp-identifier" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispensed-item.identifier.idmp-identifier" ];
+       fhir:ElementDefinition.short [ fhir:value "Dispensed item IDMP identifier" ];
+       fhir:ElementDefinition.definition [ fhir:value "Dispensed item IDMP identifier" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 39;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispensed-item.identifier.non-idmp-identifier" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispensed-item.identifier.non-idmp-identifier" ];
+       fhir:ElementDefinition.short [ fhir:value "Dispensed item non-IDMP identifier" ];
+       fhir:ElementDefinition.definition [ fhir:value "Dispensed item non-IDMP identifier" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 40;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispensed-item.qty-dispensed" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispensed-item.qty-dispensed" ];
+       fhir:ElementDefinition.short [ fhir:value "Quantity or amount dispensed" ];
+       fhir:ElementDefinition.definition [ fhir:value "Quantity or amount dispensed" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 41;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispensed-item.reimbursement-info" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispensed-item.reimbursement-info" ];
+       fhir:ElementDefinition.short [ fhir:value "Reimbursement information" ];
+       fhir:ElementDefinition.definition [ fhir:value "Reimbursement information" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ], [
+       fhir:index 42;
+       fhir:Element.id [ fhir:value "iso-19293-dispense-record.dispensed-item.inventory-location" ];
+       fhir:ElementDefinition.path [ fhir:value "iso-19293-dispense-record.dispensed-item.inventory-location" ];
+       fhir:ElementDefinition.short [ fhir:value "Inventory location from which dispense occurred" ];
+       fhir:ElementDefinition.definition [ fhir:value "Inventory location from which dispense occurred" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Element" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/untyped";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/untyped>
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.com/fhir/example/StructureDefinition/iso-19293-dispense-record.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

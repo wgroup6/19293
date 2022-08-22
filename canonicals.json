@@ -5,5 +5,47 @@
     "url": "http://example.com/fhir/example",
     "version": "1.0.0",
     "name": "ExampleIG"
+  },
+  {
+    "id": "coded",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/coded",
+    "version": "1.0.0",
+    "name": "coded"
+  },
+  {
+    "id": "date-time",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/date-time",
+    "version": "1.0.0",
+    "name": "date-time"
+  },
+  {
+    "id": "group",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/group",
+    "version": "1.0.0",
+    "name": "group"
+  },
+  {
+    "id": "iso-19293-dispense-record",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/iso-19293-dispense-record",
+    "version": "1.0.0",
+    "name": "dispenseRecord"
+  },
+  {
+    "id": "text",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/text",
+    "version": "1.0.0",
+    "name": "text"
+  },
+  {
+    "id": "untyped",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/untyped",
+    "version": "1.0.0",
+    "name": "untyped"
   }
 ]
